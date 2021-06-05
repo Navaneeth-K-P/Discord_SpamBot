@@ -7,6 +7,6 @@ notifier = dn.Notifier("<link>")
 
 while(True):
     now = datetime.utcnow().time()
-    if(now>=time(17,50) and now<=time(23,5)): #The from and to time
+    if(now>=time(17,50) and now<=time(23,5)): #The from and to time (in UTC)
         notifier.send("SAD", print_message=True)
         t.sleep(30) #time interval between each spam
